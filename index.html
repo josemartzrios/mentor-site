@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
+  
+  
+  <title>Project Frontend Mentor</title>
+
+</head>
+<body>
+
+  <header>
+    <div class="logoWrapper">
+      <img src="./images/logo.svg">
+    </div>
+
+    <!-- PARA APARECER O DESAPARECER MENU CON PURO CSS Y HTML -->
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><img src="./images/icon-hamburger.svg"/></label>
+
+    <nav id="menu">
+        <ul>
+          <li><a class="active" href="#">Inicio</a></li>
+          <li><a href="#">Características</a></li>
+          <li><a href="#">Precio</a></li>
+          <li><a class="login" href="#">Iniciar sesión</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <section id="container">
+
+    <div class="textWrapp">
+
+      <p class="textFirstLine"><span class="newText">NEW</span> Tablero de monografía</p>
+
+      <h1>
+        Información valiosa 
+        <br>
+        sobre tu equipo
+      </h1>
+
+      <p class="textThirdLine">Planeación de proyectos y seguimiento del tiempo para equipos.</p>
+
+      <button class="btn">Programe una demostración</button> 
+
+      <span class="textPrev">Para ver una previa</span>
+
+    </div>
+
+
+    <div class="imageWrapp">
+
+      <img id="celImg" src="./images/illustration-devices.svg">
+
+    </div>
+
+  </section>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by Frontend Mentor</a>. 
+      Coded by José Martínez Ríos</a>.
+    </p>
+  </footer>
+</body>
+</html>

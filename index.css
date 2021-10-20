@@ -1,0 +1,240 @@
+*{
+    /* background: #fff8f8; */
+    font-family: 'Barlow Condensed', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+#menu ul{
+    display: flex;
+} 
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+header label:hover{
+    cursor: pointer;
+}
+
+ul li{
+    margin-top: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+ul li a{
+    color: black;
+    
+}
+
+a.active, a:hover{
+    text-decoration: underline;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.login{
+    color: grey;
+}
+
+.logoWrapper{
+    margin: 3rem;
+}
+#container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.textWrapp{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.newText{
+    color: white;
+    background: black;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.textFirstLine, .textPrev{
+    text-transform: uppercase;
+    color: gray;
+    letter-spacing: .2rem;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.textThirdLine{
+    color: grey;
+}
+
+button{
+    margin-top: 2rem;
+    background: red;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 376px) {
+    
+    #container{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    header label{
+        display: block;
+    }
+
+    /* volar menu cuando se de click */
+    #btn-menu:checked ~ #menu ul{
+        margin-left: 460px;
+    }
+
+    #menu ul{
+        display: block;
+    }
+
+    ul{
+        position: fixed; 
+        width: 100%;
+        height: 43vh;
+        background-color: black;
+        text-align: center;
+        top: 80px;
+        left: -500px; 
+        /* -300px LEFT */
+        text-align: center;
+    } 
+
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 20px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+        color:blanchedalmond;
+    }
+
+    a:hover, :active{
+        text-decoration: underline;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+   .imageWrapp{
+       display: flex;
+       order: 1;
+   }
+
+   #celImg{
+       width: 150vw;
+   }
+
+   .textWrapp{
+        order: 2;
+    }
+    
+    .textFirstLine{
+        margin-right: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        display: flex;
+        text-align: left;
+        margin-left: 2.5rem;
+    }
+
+    .textThirdLine {
+        display: flex;
+        width: 60%;
+        flex-wrap: wrap;
+        text-align: left;
+        margin-left: 2.5rem;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 15px;
+        margin-top: 0;
+        display: flex;
+        margin-left: 2.5rem;
+    }
+
+    .textPrev {
+        display: flex;
+        text-align: left;
+        margin-left: 2.6rem;
+        margin-top: 5px;
+    }
+
+    footer{
+        margin-top: 2rem;
+    }
+
+
+
+} 
